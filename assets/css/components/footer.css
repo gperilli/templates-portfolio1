@@ -1,0 +1,21 @@
+.footer__inner-container {
+padding-top: 10px;
+padding-bottom: 30px;
+float: left;
+width: 100%;
+background-color: transparent;
+}
+
+a.footer__nsurname-link {
+    color: var(--uiclr-3);
+}
+
+p.footer__nsurname-version {
+    font-size: 14px; width: 100%;
+    color: var(--uiclr-3);
+}
+
+p.footer__nsurname-credit {
+    font-size: 14px; width: 100%; text-align: right;
+    color: var(--uiclr-3);
+}

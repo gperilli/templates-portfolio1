@@ -1,0 +1,32 @@
+.contact-form > fieldset {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-bottom: 20px;
+  border: none;
+  padding: 0px;
+}
+
+.contact-form > fieldset > label, .contact-form > fieldset > input, .contact-form > fieldset > textarea {
+  padding-left: 10px;
+  border: none;
+  background: #fff;
+}
+
+.contact-form > fieldset > label {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.contact-form > fieldset > input {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+.contact-form > fieldset > textarea {
+  resize: none;
+  overflow: auto;
+  outline: none;
+}

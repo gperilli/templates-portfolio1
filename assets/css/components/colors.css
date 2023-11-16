@@ -1,0 +1,54 @@
+:root {
+    --uiclr-white: #fff; /** white **/
+    --uiclr-background-white: #fff; /** white **/
+    --uiclr-background-grey: #eee; /** white **/
+    --uiclr-1: #808080; /** grey **/
+    --uiclr-2: #484848; /** grey **/
+    --uiclr-3: #fff; /** white **/
+    --uiclr-4: #484848; /** grey **/
+
+    /** Darker Color **/
+    --uiclr-5: #bbb;
+    /** lighter Color **/
+    --uiclr-6: #E1E5E5;
+    --uiclr-7: #eee;
+
+
+    --uiclr-7o: rgba(224, 224, 224, 0.6);
+    /** green **/
+    --uiclr-8: #0094a1;
+    --uiclr-8b: #67b0b7;
+    --uiclr-9: #000; /** black **/
+    /** **/
+    --uitxtclr-1: #3c3c3c;
+    --uitxtclr-2: var(--uiclr-4);
+    --uitxtclr-3: #828181;
+    /* backgroud colors */
+    --uisectclr-nav: var(--uiclr-3);
+    --uisectclr-hdr: var(--uiclr-3);
+    --uisectclr-ftr: var(--uiclr-2);
+    --uisectclr-projects: var(--uiclr-7);
+    --section-background--bio: var(--uiclr-7o);
+    --section-background--resume: var(--uiclr-7);
+    --uisectclr-resume: var(--uiclr-7);
+}
+
+.background--grey {
+    background: var(--uiclr-background-grey);
+}
+
+.background--pink {
+    background: pink;
+}
+
+.background--blue {
+    background: lightblue;
+}
+
+.background--green {
+    background: palegreen;
+}
+
+.background--white {
+    background: var(--uiclr-background-white);
+}

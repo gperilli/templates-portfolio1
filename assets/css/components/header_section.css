@@ -1,0 +1,153 @@
+/* Page headers */
+
+.hdrsection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+
+.hdrsection__text {
+  border: 0px solid #ddd;
+  flex: 65%;
+  flex-grow: 0;
+  background-color: transparent;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.hdrsection__text--index {
+  border: 0px solid #ddd;
+  width: 100%;
+  flex-grow: 0;
+  background-color: transparent;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.hdrsection__sidebox {
+  margin-top: 0px;
+  display: inline-block;
+  position: relative;
+  flex: 40%;
+  margin-left: -0px;
+  padding-right: 0px;
+  order: 2;
+  flex-grow: 1;
+  z-index: 99;
+}
+
+.hdrsection__sidebox--index {
+  margin-top: 0px;
+  display: inline-block;
+  position: absolute;
+  width: 35%;
+  top: 0%;
+  left: 65%;
+  margin-left: -0px;
+  padding-right: 0px;
+  order: 2;
+  flex-grow: 1;
+  border: 0px solid blue;
+  z-index: 99;
+}
+/* animated page links */
+
+.h2--main--sidebox {
+  font-family: var(--font-family1);
+  font-size: 1.4rem;
+  text-transform: none;
+  color: #828181;
+  margin-right: 20px;
+  margin-left: 0px;
+  transition-duration: 0.3s;
+}
+
+.h2__chevron {
+  position: relative;
+  top: 0.1rem;
+  height: 1rem;
+  ;
+}
+
+.h2--main--sidebox:visited {
+  margin-left: 0px;
+  text-decoration: none;
+  color: #828181;
+}
+
+.h2--main--sidebox:hover {
+  margin-right: 0px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .h2--main--sidebox {
+      font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .h2--main--sidebox {
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .hdrsection__text {
+      padding-right: 30px;
+      flex: 50%;
+  }
+  .hdrsection__sidebox--index {
+      width: 50%;
+      left: 50%;
+  }
+  .hdrsection__sidebox {
+      width: 100%;
+  }
+  .h2--main--sidebox {
+      font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hdrsection {
+      flex-direction: column;
+  }
+  .hdrsection__text {
+      padding-right: 0px;
+      width: 100%;
+  }
+  .hdrsection__sidebox--index {
+      width: 100%;
+      left: 0%;
+  }
+  .hdrsection__sidebox {
+      flex: 100%;
+  }
+  .h2--main--sidebox {
+      font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hdrsection {
+      padding-top: 30px;
+  }
+  .hdrsection__text {
+      padding-right: 0px;
+      flex: 100%;
+  }
+  .hdrsection__sidebox--index {
+      flex: 100%;
+  }
+}

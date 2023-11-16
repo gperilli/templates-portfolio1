@@ -1,0 +1,164 @@
+.angle {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.angle:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.angle1--white-to-grey,
+.angle1--white-to-grey:after,
+.angle1--white-to-green,
+.angle1--white-to-green:after,
+.angle1--white-to-pink,
+.angle1--white-to-pink:after,
+.angle1--grey-to-white,
+.angle1--grey-to-white:after,
+.angle2--grey-to-white,
+.angle2--grey-to-white:after,
+.angle2--blue-to-white,
+.angle2--blue-to-white:after,
+.angle2--pink-to-white,
+.angle2--pink-to-white:after,
+.angle3--white-to-grey,
+.angle3--white-to-grey:after,
+.angle3--white-to-blue,
+.angle3--white-to-blue:after {
+    height: 80px;
+    width: 100%;
+}
+
+
+
+.angle1--white-to-grey,
+.angle3--white-to-grey,
+.angle2--grey-to-white {
+  background-color: var(--uiclr-background-white);
+  width: 100%;
+}
+
+.angle1--grey-to-white {
+  background-color: var(--uiclr-background-grey);
+  width: 100%;
+}
+
+.angle1--white-to-grey:after {
+  background-color: var(--uiclr-background-grey);
+  -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  width: 100%;
+  z-index: 100;
+}
+
+.angle1--white-to-green:after {
+  background-color: palegreen;
+  -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  width: 100%;
+  z-index: 100;
+}
+
+.angle1--white-to-pink {
+  background-color: pink;
+  -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  width: 100%;
+  z-index: 100;
+}
+
+.angle1--grey-to-white:after {
+  background-color: var(--uiclr-background-white);
+  -webkit-clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  clip-path: polygon(100% 100%, 0% 0%, 0% 100%);
+  width: 100%;
+}
+
+.angle2--grey-to-white:after {
+  background-color: var(--uiclr-background-grey);
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 25% 100%);
+  width: 100%;
+}
+
+.angle2--blue-to-white:after {
+  background-color: lightblue;
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 25% 100%);
+  width: 100%;
+}
+
+.angle2--pink-to-white:after {
+  background-color: pink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 25% 100%);
+  width: 100%;
+}
+
+.angle3--white-to-grey:after {
+  background-color: var(--uiclr-background-grey);
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  width: 100%;
+  z-index: 100;
+}
+
+.angle3--white-to-blue:after {
+  background-color: lightblue;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  width: 100%;
+  z-index: 100;
+}
+
+@media (min-width: 520px) {
+  .angle1--white-to-grey,
+  .angle1--white-to-grey:after,
+  .angle1--white-to-green,
+  .angle1--white-to-green:after,
+  .angle1--white-to-pink,
+  .angle1--white-to-pink:after,
+  .angle1--grey-to-white,
+  .angle1--grey-to-white:after,
+  .angle2--grey-to-white,
+  .angle2--grey-to-white:after,
+  .angle2--blue-to-white,
+  .angle2--blue-to-white:after,
+  .angle2--pink-to-white,
+  .angle2--pink-to-white:after,
+  .angle3--white-to-grey,
+  .angle3--white-to-grey:after,
+  .angle3--white-to-blue,
+  .angle3--white-to-blue:after {
+      height: 120px;
+      width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .angle1--white-to-grey,
+  .angle1--white-to-grey:after,
+  .angle1--white-to-green,
+  .angle1--white-to-green:after,
+  .angle1--white-to-pink,
+  .angle1--white-to-pink:after,
+  .angle1--grey-to-white,
+  .angle1--grey-to-white:after,
+  .angle2--grey-to-white,
+  .angle2--grey-to-white:after,
+  .angle2--blue-to-white,
+  .angle2--blue-to-white:after,
+  .angle2--pink-to-white,
+  .angle2--pink-to-white:after,
+  .angle3--white-to-grey,
+  .angle3--white-to-grey:after,
+  .angle3--white-to-blue,
+  .angle3--white-to-blue:after {
+      height: 160px;
+      width: 100%;
+  }
+}

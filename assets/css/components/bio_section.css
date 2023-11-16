@@ -1,0 +1,82 @@
+/* Bio Section */
+
+.aboutme-aboutmecolumn {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+}
+
+.aboutme-rescolumn {
+    width: 50%;
+    float: left;
+}
+
+.indent {
+    margin-left: 10px;
+}
+
+.aboutme__img-container {}
+
+.aboutme__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    fill: var(--uiclr-1);
+}
+
+#LnkedinSqre {
+    opacity: 0.6;
+}
+
+.SMedSqres {
+    opacity: 0.7;
+}
+
+.aboutme__icons {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding-top: 0px;
+    margin-right: 10px;
+    color: var(--uitxtclr-3);
+    /** drop-shadow: 16px 16px 10px black; **/
+    /** box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; **/
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+    z-index: 300;
+
+}
+
+.aboutme__icons:hover {
+    color: var(--uiclr-9);
+}
+
+.aboutme__icons:hover #LnkedinSqre {
+    opacity: 1;
+}
+
+
+/* Responsiveness Structure */
+
+@media (max-width: 880px) {}
+
+@media (max-width: 850px) {}
+
+@media (max-width: 600px) {
+    .aboutme-aboutmecolumn {
+        width: 100%;
+    }
+    .aboutme-rescolumn {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .aboutme__img-container {
+        position: relative;
+        margin-right: -30px;
+    }
+    .BioColImg {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {}
