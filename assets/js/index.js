@@ -1,14 +1,24 @@
+
+// import { nameSvgPath } from 'templates-portfolio1/assets/js/svg-name.js'
+// import { garethSvgPath } from 'templates-portfolio1/assets/js/svg-name.js'
+
+// if (window.location.hostname === 'gperilli.github.io') {
+//   nameSvgPath = require('/templates-portfolio1/assets/js/svg-name.js');
+//   garethSvgPath = require('/templates-portfolio1/assets/js/svg-gareth.js');
+// } else {
+//   nameSvgPath = require('/assets/js/svg-name.js');
+//   nameSvgPath = require('/assets/js/svg-gareth.js');
+// }
+
 let nameSvgPath, garethSvgPath;
-const githubPath = 'templates-portfolio1/assets/js/';
-const localPath = '/assets/js/';
 if (window.location.hostname === 'gperilli.github.io') {
   // Use the GitHub path
-  import('templates-portfolio1/assets/js/svg-name.js')
+  import('templates-portfolio1/assets/js/svg-name')
     .then(module => {
       nameSvgPath = module.nameSvgPath;
     })
     .catch(error => console.error('Dynamic import failed:', error));
-  import('templates-portfolio1/assets/js/svg-gareth.js')
+  import('templates-portfolio1/assets/js/svg-gareth')
     .then(module => {
       garethSvgPath = module.garethSvgPath;
     })
