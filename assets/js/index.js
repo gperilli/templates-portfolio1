@@ -34,7 +34,7 @@ window.addEventListener( 'load', function() {
   this.document.querySelector(`#LSel${lang}`).className = "langbtns langbtns--hlghtd";
 
   let silhoutteImageToUse;
-  if ((new URL(document.location).pathname) == '/index.html') {
+  if ((new URL(document.location).pathname) == '/index.html' || (new URL(document.location).pathname) == '/' ) {
     console.log("template");
     silhoutteImageToUse = nameSvgPath;
   } else {
