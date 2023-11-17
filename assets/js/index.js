@@ -1,6 +1,31 @@
-
-import { nameSvgPath } from '/assets/js/svg-name.js'
-import { garethSvgPath } from '/assets/js/svg-gareth.js'
+let nameSvgPath, garethSvgPath;
+const githubPath = 'templates-portfolio1/assets/js/';
+const localPath = '/assets/js/';
+if (window.location.hostname === 'gperilli.github.io') {
+  // Use the GitHub path
+  import('templates-portfolio1/assets/js/svg-name.js')
+    .then(module => {
+      nameSvgPath = module.nameSvgPath;
+    })
+    .catch(error => console.error('Dynamic import failed:', error));
+  import('templates-portfolio1/assets/js/svg-gareth.js')
+    .then(module => {
+      garethSvgPath = module.garethSvgPath;
+    })
+    .catch(error => console.error('Dynamic import failed:', error));
+} else {
+  // Use the local path
+  import('/assets/js/svg-name.js')
+    .then(module => {
+      nameSvgPath = module.nameSvgPath;
+    })
+    .catch(error => console.error('Dynamic import failed:', error));
+  import('/assets/js/svg-gareth.js')
+    .then(module => {
+      garethSvgPath = module.garethSvgPath;
+    })
+    .catch(error => console.error('Dynamic import failed:', error));
+}
 
 window.addEventListener( 'load', function() {
   // Deal with translations
@@ -85,3 +110,5 @@ document.getElementsByTagName('BODY')[0].onresize = function() {
     document.getElementById('body').style.position = 'fixed';
   }
 };
+
+
