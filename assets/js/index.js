@@ -39,11 +39,9 @@ window.addEventListener( 'load', function() {
   this.document.querySelector(`#LSel${lang}`).className = "langbtns langbtns--hlghtd";
 
   let silhoutteImageToUse;
-  if ((new URL(document.location).pathname) == '/index.html' || (new URL(document.location).pathname) == '/' ) {
-    console.log("template");
+  if ((new URL(document.location).pathname) == '/index.html' || (new URL(document.location).pathname) == '/' || (new URL(document.location).pathname) == '/templates-portfolio1/' ) {
     silhoutteImageToUse = nameSvgPath;
   } else {
-    console.log("mockup");
     silhoutteImageToUse = garethSvgPath;
   }
   // svg loads
