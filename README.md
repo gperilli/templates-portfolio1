@@ -2,12 +2,12 @@
 
 |   |   |
 |---|---|
-| <img src="assets/img/portfolio-template.png" width="80%" />   | <img src="assets/img/portfolio-mockup.png" width="80%" />   |
-[template live demo](https://gperilli.github.io/templates-portfolio1) | [mockup live demo](https://gperilli.github.io/templates-portfolio1/mockup)
+| <img src="assets/img/portfolio-template.png" width="80%" />   | <img src="assets/img/portfolio-demo.png" width="80%" />   |
+[template live demo](https://gperilli.github.io/templates-portfolio1) | [mockup live demo](https://gperilli.github.io/templates-portfolio1/demo)
 
 
 
-This is a HTML single page portfolio frontend template and mockup. The original design came from [https://anniebombanie.com/](https://anniebombanie.com/). I have coded this mostly from scratch, removed the testimonial section and added a few sections of my own: the professional work and graphics work sections. My modified design also includes image galleries for the projects featuring fullscreen, fullpage top-to-bottom screenshots. I use this deisgn for my own portfolio at [https://gperilli.dev](https://gperilli.dev)
+This is a HTML single page portfolio frontend template and demo. The original design came from [https://anniebombanie.com/](https://anniebombanie.com/). I have coded this mostly from scratch, removed the testimonial section and added a few sections of my own: the professional work and graphics work sections. My modified design also includes image galleries for the projects featuring fullscreen, fullpage top-to-bottom screenshots. I use this deisgn for my own portfolio at [https://gperilli.dev](https://gperilli.dev)
 
 
 ## Built With
